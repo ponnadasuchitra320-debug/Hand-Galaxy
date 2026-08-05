@@ -1,0 +1,29 @@
+@import "tailwindcss";
+
+@layer utilities {
+  @keyframes spin-reverse {
+    from {
+      transform: rotate(360deg);
+    }
+    to {
+      transform: rotate(0deg);
+    }
+  }
+
+  .animate-spin-reverse {
+    animation: spin-reverse 3s linear infinite;
+  }
+}
+
+/* Custom scrollbars and document defaults */
+html,
+body {
+  margin: 0;
+  padding: 0;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  background-color: #020617;
+  color: #f8fafc;
+  user-select: none;
+}
